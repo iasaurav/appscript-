@@ -10,8 +10,7 @@ function contact(h,i,j,k,l) {
 
 function book(a,b,c,a) {
   return "<tr><td><a href='https://ncert.nic.in/textbook/pdf/"+a+"dd.zip'>"+b
-+"</a></td><td><a href='https://ncert.nic.in/textbook/pdf/"+c+"dd.zip'>"+a+"</
-a></td></tr>";
++"</a></td><td><a href='https://ncert.nic.in/textbook/pdf/"+c+"dd.zip'>"+a+"</a></td></tr>";
   }
 
 
@@ -171,7 +170,7 @@ function shorter_URL(url) {
         return content.getContentText();
     } catch (e) {
         return 'An error occured: [ ' + e + ' ]';
-    }
+    }}}
 
 
 
