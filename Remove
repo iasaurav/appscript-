@@ -2,17 +2,6 @@
 
 
 
-function specialconcat(input, delimiter) {
-   if (Array.isArray(input)) {
-      var data = '';
-      var delim = delimiter == undefined ? "" : delimiter
-      for (var i = 0; i < input.length; i++) {
-         data += input[i] + delim;
-      }
-      return delimiter == undefined ? data : data.substring(0, data.length - 1)
-   } else {
-      return input
-   }
 
 
 
