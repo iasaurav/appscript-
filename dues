@@ -1,6 +1,1 @@
-function dues(p,i,n) {
-  let o='0302jan@paytm';
-  return "<div class='gallery'><a href='paytmmp://pay?pa="+o+"&pn=saurav&am="
-+p+"'><img src='"+i+"'></a><div class='desc'><a href='https://gpay.app.goo.gl/
-pay-T8wH7S8sEGh'>"+n+"</div></div>";
-  }
+
