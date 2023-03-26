@@ -1,3 +1,20 @@
+function contact(h,i,j,k,l) {
+  let a="<tr><td><a href='//wa.me/91"+h+"'>"+i+"</a></td>";
+  let b="<td><a href='tel:"+j+"'>"+j+"</a></td>";
+  let c="<td><a href='tel:"+k+"'>"+k+"</a></td>";
+  let d="<td><a href='tel:"+l+"'>"+l+"</a></td><tr>";
+  return a+b+c+d;
+  }
+
+
+
+function book(a,b,c,a) {
+  return "<tr><td><a href='https://ncert.nic.in/textbook/pdf/"+a+"dd.zip'>"+b
++"</a></td><td><a href='https://ncert.nic.in/textbook/pdf/"+c+"dd.zip'>"+a+"</
+a></td></tr>";
+  }
+
+
 function dues(p,i,n) {
   let upi='0302jan@paytm';
 let link='https://gpay.app.goo.gl/pay-T8wH7S8sEGh';
