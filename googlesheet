@@ -1,3 +1,14 @@
+function youtube(i, n) {
+  let audio = 'https://ytaud.io/play/';
+  let video = 'https://www.genfrom.com/process.php?u=';
+  let ope = "'target='_blank";
+  let a = "<tr><td><a href='" + audio + i + ope + "'>" + n.slice(0, 35) + "</
+  let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/
+watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
+  return a + b;
+}
+
+
 function contact(h,i,j,k,l) {
   let a="<tr><td><a href='//wa.me/91"+h+"'>"+i+"</a></td>";
   let b="<td><a href='tel:"+j+"'>"+j+"</a></td>";
