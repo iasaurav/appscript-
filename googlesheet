@@ -1,3 +1,12 @@
+function artist(b,c) {
+  let a="https://www.google.com/search?q=wynk: ";
+  return "<tr><td><a href='"+a+b+"'>"+b+"</a></td>"+"<td><a href='"+a+c+"'>"+c
++"</a></td></tr>";
+  }
+
+
+
+
 function youtubeid(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     var match = url.match(regExp);
