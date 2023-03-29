@@ -1,7 +1,7 @@
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('Sync Now')
-    .addItem('Google Drive', 'run')
+    .addItem('Google Drive', 'Saurav')
     .addToUi();
 }
 
