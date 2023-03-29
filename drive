@@ -11,7 +11,6 @@ function Saurav() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   ss.setActiveSheet(ss.getSheetByName("Saurav"));
   var foldername = 'Saurav';                     // Replace your folder name 
-here
   var folderlisting = 'listing of folder ' + foldername;
   var ssparents = DriveApp.getFoldersByName(foldername)
   var sheet = ss.getActiveSheet();
@@ -19,7 +18,6 @@ here
   var headers = [["Date", "File Owner", "File Name", "File Share", "File URL"]]
 ;
   // Change here google sheet Range as per above header which is mentioned by 
-you
   sheet.getRange("A1:E").clear();
   sheet.getRange("A1:E1").setValues(headers);
   // No need to change here.
