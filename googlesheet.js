@@ -1,3 +1,9 @@
+function blogger(a) {
+let url=a.slice(43);
+return url.slice(0,-5);
+}
+
+
 function shop(h) {
 let amazon='https://www.amazon.in/s?k=';
 let bigbasket='https://www.bigbasket.com/ps/?q=';
