@@ -1,3 +1,18 @@
+function shop(h) {
+let amazon='https://www.amazon.in/s?k=';
+let bigbasket='https://www.bigbasket.com/ps/?q=';
+let flipkart='https://www.flipkart.com/search?q=';
+let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
+  let a="<tr><td><a href='"+amazon+h+"'>"+h+"</a></td>";
+  let b="<td><a href='"+bigbasket+h+"'>"+h+"</a></td>";
+  let c="<td><a href='"+flipkart+h+"'>"+h+"</a></td>";
+  let d="<td><a href='"+flipkartg+h+"&sid=eat%2Fnvt&marketplace=GROCERY&sourceFeatureType=mmpSplit&pageUID=1680176472603'>"+h+"</a></td><tr>";
+  return a+b+c+d;
+  }
+
+
+
+
 function extractUrlID(a) {
   var expression = a.match(/[-\w]{25,}/);
   return expression;
