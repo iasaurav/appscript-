@@ -93,7 +93,7 @@ function ytplaylist (b) {
 function linkex(input) {
     var range = SpreadsheetApp.getActiveSheet().getRange(input);
       var url = /"(.*?)"/.exec(range.getFormulaR1C1())[1];
-        return url;
+        return url.slice(5);
         }
 
 
