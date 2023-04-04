@@ -1,20 +1,4 @@
-function createIndexSheet() {
-  var ss = SpreadsheetApp.getActive();
-  var indexSheet = ss.getSheetByName('Index');
-  var numSheets = ss.getNumSheets();
-  var sheets = ss.getSheets();
-  var sheetName, sheetId;
-  for (var i = 0; i < numSheets; i++) {
-    sheetName = sheets[i].getSheetName();
-    sheetId = sheets[i].getSheetId();
-    if (sheetName != 'Index') {
-      indexSheet.appendRow(['=HYPERLINK("#gid=' + sheetId + '", "' + sheetName
-+ '")']);
-      var sheet = SpreadsheetApp.getActive().getSheetByName("Index");
-      sheet.getRange("A1:H" + sheet.getLastRow()).removeDuplicates([1]);
-    }
-  }
-}
+
 
 
 
