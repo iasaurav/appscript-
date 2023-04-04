@@ -1,3 +1,9 @@
+function blog(a) {
+let url=str.replace(/^.*\//, '').slice(0,-5);
+return url;
+}
+
+
 function blogger(a) {
 let url=a.slice(43);
 return url.slice(0,-5);
