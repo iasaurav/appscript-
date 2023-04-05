@@ -3,8 +3,8 @@ function createIndex() {
   
   // Get all the different sheet IDs
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-ss.setActiveSheet(ss.getSheetByName("Index"));
-  var sheets = ss.getSheets();
+
+  var sheets = ss.setActiveSheet(ss.getSheetByName("Index"));
   
   var namesArray = sheetNamesIds(sheets);
   
@@ -48,8 +48,8 @@ function updateIndex() {
   
   // Get all the different sheet IDs
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  ss.setActiveSheet(ss.getSheetByName("Index"));
-var sheets = ss.getSheets();
+ 
+var sheets = ss.setActiveSheet(ss.getSheetByName("Index"));
   var indexSheet = sheets[0];
   
   var namesArray = sheetNamesIds(sheets);
