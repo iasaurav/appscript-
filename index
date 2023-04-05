@@ -1,12 +1,4 @@
-function onOpen() {
-  
-  var ui = SpreadsheetApp.getUi();
 
-  ui.createMenu('Index Menu')
-      .addItem('Create Index', 'createIndex')
-      .addItem('Update Index', 'updateIndex')
-      .addToUi();
-}
 
 
 // function to create the index
@@ -14,6 +6,7 @@ function createIndex() {
   
   // Get all the different sheet IDs
   var ss = SpreadsheetApp.getActiveSpreadsheet();
+ss.setActiveSheet(ss.getSheetByName("Index"));
   var sheets = ss.getSheets();
   
   var namesArray = sheetNamesIds(sheets);
@@ -58,7 +51,8 @@ function updateIndex() {
   
   // Get all the different sheet IDs
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheets = ss.getSheets();
+  ss.setActiveSheet(ss.getSheetByName("Index"));
+var sheets = ss.getSheets();
   var indexSheet = sheets[0];
   
   var namesArray = sheetNamesIds(sheets);
