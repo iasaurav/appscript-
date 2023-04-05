@@ -12,10 +12,6 @@ return url;
 }
 
 
-function blogger(a) {
-let url=a.slice(43);
-return url.slice(0,-5);
-}
 
 
 function shop(h) {
@@ -33,10 +29,7 @@ let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
 
 
 
-function extractUrlID(a) {
-  var expression = a.match(/[-\w]{25,}/);
-  return expression;
-}
+
   
 
 
@@ -77,11 +70,7 @@ let link='https://gpay.app.goo.gl/pay-T8wH7S8sEGh';
 
 
 
-function GETURL(input) {
-  var range = SpreadsheetApp.getActiveSheet().getRange(input);
-  var url = /"(.*?)"/.exec(range.getFormulaR1C1())[1];
-  return url;
-}
+
 
 
 function ytplaylist (b) {
@@ -92,11 +81,7 @@ function ytplaylist (b) {
 
 
 
-function linkex(input) {
-    var range = SpreadsheetApp.getActiveSheet().getRange(input);
-      var url = /"(.*?)"/.exec(range.getFormulaR1C1())[1];
-        return url.slice(5);
-        }
+
 
 
 
@@ -167,8 +152,8 @@ return "<a href='//wa.me/91"+h+"'>"+i+"</a>";
 function phone(j,k) {
 return "<a href='tel:"+j+"'>"+k+"</a>";
 }
-function Drive(l,m) {
-return "<a href='"+l.slice(32,-18)+"'target='_blank'>"+m+"</a>";
+function img(l) {
+return "<img src='"+l.slice(32,-18)+"'>";
 }
 function playstore(n) {
 return "<a href='https://play.google.com/store/search?q="+encodeURIComponent(n)+"&=apps'>"+n+"</a>";
