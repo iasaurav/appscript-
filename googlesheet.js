@@ -16,8 +16,9 @@ function SHEETID () {
 
 
 function blog(a) {
-let url=str.replace(/^.*\//, '').slice(0,-5);
-return url;
+let u=a.replace(/^.*\//, '');
+     let newStr = u.replace(/.html/g,'');
+return newStr;
 }
 
 
