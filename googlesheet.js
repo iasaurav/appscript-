@@ -1,3 +1,14 @@
+function pay(o,p,n) {
+let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=";
+let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
+let encoded = qr + encodeURIComponent(a);
+ return "<div class='gallery'><a href='"+a+"'><img src='"+n+"'></a><div class='desc'><a href='"+encoded+"'>"+p+"</div></div>";
+  }
+
+
+
+
+
 function array(a) {
 return "'"+a+"',";
 }
