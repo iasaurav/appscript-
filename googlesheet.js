@@ -16,7 +16,7 @@ return "'"+a+"',";
 
 
 
-function SHEETID () {
+function Id () {
   return SpreadsheetApp.getActiveSpreadsheet().getId()
 }
 
