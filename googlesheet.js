@@ -48,13 +48,6 @@ let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
   }
 
 
-
-
-
-  
-
-
-
 function youtube(i, n) {
   let audio = 'https://ytaud.io/play/';
   let video = 'https://www.genfrom.com/process.php?u=';
