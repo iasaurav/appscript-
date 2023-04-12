@@ -1,8 +1,4 @@
-function Anchorg(c,d) {
-let a="https://docs.google.com/spreadsheets/d/";
-let b="/edit#gid="+c;
-return "<a href='"+a+Id()+b+"'>"+d+"</a>";
-}
+
 
 
 
@@ -238,5 +234,5 @@ function shorter_URL(url) {
 function Anchorg(c,d) {
 let a="https://docs.google.com/spreadsheets/d/";
 let b="/edit#gid="+c;
-return "<a href='"+a+id()+b"'>"+d+"</a>";
+return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
