@@ -1,3 +1,11 @@
+function Anchorg(c,d) {
+let a="https://docs.google.com/spreadsheets/d/";
+let b="/edit#gid="+c;
+return "<a href='"+a+Id()+b+"'>"+d+"</a>";
+}
+
+
+
 function pay(o,p,n) {
 let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=";
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
