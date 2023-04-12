@@ -58,11 +58,12 @@ function youtube(i, n) {
 }
 
 
-function contact(h,i,j,k,l) {
-  let a="<tr><td><a href='//wa.me/91"+h+"'>"+i+"</a></td>";
+function contact(h,message,i,j,k,l) {
+  let whatsapp="https://api.whatsapp.com/send?phone=91"+h+"&text="+message; 
+  let a="<tr><td><a href='"+whatsapp+"'>"+i+"</a></td>";
   let b="<td><a href='tel:"+j+"'>"+j+"</a></td>";
   let c="<td><a href='tel:"+k+"'>"+k+"</a></td>";
-  let d="<td><a href='tel:"+l+"'>"+l+"</a></td><tr>";
+  let d="<td><a href=='tel:"+l+"'>"+l+"</a></td></tr>";
   return a+b+c+d;
   }
 
