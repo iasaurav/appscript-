@@ -1,0 +1,14 @@
+<div id="female"></div>
+  
+  <script>
+var select = document.getElementById("female"); 
+var options = ['']; 
+
+// Optional: Clear all existing options first:
+select.innerHTML = "";
+// Populate list with options:
+for(var i = 0; i < options.length; i++) {
+    var opt = "https://drive.google.com/uc?export=view&id="+options[i];
+    select.innerHTML += "<div class='gallery'><img src='" + opt + "'oncontextmenu='return false;'></div></div>";
+}
+  </script>
