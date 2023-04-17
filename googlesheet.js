@@ -1,11 +1,11 @@
-function youtuber(i, n) {
+function youtuber(p,i, n) {
   let audio = 'https://ytaud.io/play/';
   let video = 'https://www.genfrom.com/process.php?u=';
   let ope = "'target='_blank";
-let c="<tr><td><a href='#'id='b"+row()-1+"'data-video ='"+i+"'class='light'>"+n.slice(0,35)+"</a></td>";
+let c="<tr><td><a href='#'id='b"+p+"'data-video ='"+i+"'class='light'>"+n.slice(0,35)+"</a></td>";
  let a = "<td><a href='" + audio + i + ope + "'>Audio-Player</a></td>";
   let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
-  return a + b;
+  return c+a + b;
 }
 
 
