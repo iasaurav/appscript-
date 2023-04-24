@@ -147,7 +147,7 @@ function paytm (o, p, q) { let a= "paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q
 }
 
 function paytmb (o, p, q, r) { 
-let b = "paytmmp://pay?pa=" + 0 + "@" + p + ".ifsc.npci&pn=" + q + "&am=" +r;
+let b = "paytmmp://pay?pa=" + o + "@" + p + ".ifsc.npci&pn=" + q + "&am=" +r;
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht=qr&chl="; return "<a href='" + b + "'>Bank-Account</a>";
 } 
 
