@@ -1,0 +1,10 @@
+function yahooF(ticker) {
+  const url = `https://finance.yahoo.com/quote/${ticker}?p=${ticker}`;
+  const res = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
+  const contentText = res.getContentText();
+  const price = contentText.match(/<fin-streamer(?:.*?)active="">(\d+[,]?[\d\.]+?)<\/fin-streamer>/);
+  console.log(price[1]);
+  return price[1];
+}
+
+=yahooF("<ticker name>")
