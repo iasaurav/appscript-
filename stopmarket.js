@@ -50,8 +50,6 @@ let c="<td><a href='"+fyers+i+"CE"+fyersend+"'target='_blank'>"+result+"</a></td
   return a+b+c;
   }
 
-
-
 function bankex(i) {
   let fyers="https://trade.fyers.in/popout/index.html?symbol="; 
 let fyersend="&resolution=5&theme=light";
@@ -64,6 +62,17 @@ let c="<td><a href='"+fyers+i+"CE"+fyersend+"'target='_blank'>"+result+"</a></td
   return a+b+c;
   }
 
+
+
+function fno(i,j) {
+  let fyers="https://trade.fyers.in/popout/index.html?symbol=NSE:"+i+j+"&resolution=5&theme=light";
+  let groww="https://groww.in/charts/futures/"+i+j; 
+  let sensibull="https://web.sensibull.com/chart?tradingSymbol="+i+j; 
+  let a="<tr><td><a href='"+groww+"'target='_blank'>"+i+"</a></td>";
+let b="<td><a href='"+sensibull+"'target='_blank'>"+i+"-FUT</a></td>";
+let c="<td><a href='"+fyers+"'target='_blank'>"+i+"-FUT</a></td></tr>";
+  return a+b+c;
+  }
 
   
   
