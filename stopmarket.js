@@ -82,5 +82,20 @@ let c="<td><a href='"+sensibull+formattedDate+"'target='_blank'>"+i+"</a></td>";
   return a+b+c+d+e;
   }
 
+
+function fno(i,j) {
+  let fyers="https://trade.fyers.in/popout/index.html?symbol=NSE:"+i+"-EQ&resolution=5&theme=light";
+  let groww="https://groww.in/charts/futures/"+i; 
+  let sensibull="https://web.sensibull.com/chart?tradingSymbol="+i; 
+let option='https://instaoptions.fyers.in/instruments#instrument='+i;
+let sensibulloption='https://web.sensibull.com/option-chain?tradingsymbol='+i+'&expiry=';
+  let a="<td><a href='"+fyers+"'target='_blank'>"+i+"</a></td>";  
+  let b="<td><a href='"+option+"'target='_blank'>"+i+"</a></td>";
+let c="<td><a href='"+sensibull+j+"'target='_blank'>"+i+"</a></td>";
+  let d="<td><a href='"+sensibulloption+"'target='_blank'>"+i+"</a></td>";
+  let e="<td><a href='"+groww+j+"'target='_blank'>"+i+"</a></td></tr>";
+  return a+b+c+d+e;
+  }
+
   
   
