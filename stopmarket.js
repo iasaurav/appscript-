@@ -64,7 +64,7 @@ let c="<td><a href='"+fyers+i+"CE"+fyersend+"'target='_blank'>"+result+"</a></td
 
 
 
-function fno(i) {
+function fnof(i) {
   let fyers="https://trade.fyers.in/popout/index.html?symbol=NSE:"+i+"-EQ&resolution=5&theme=light";
   let groww="https://groww.in/charts/futures/"+i; 
   let sensibull="https://web.sensibull.com/chart?tradingSymbol="+i; 
@@ -96,5 +96,11 @@ let c="<td><a href='"+sensibull+"'target='_blank'>"+i+"</a></td>";
   return a+b+c+d;
   }
 
-  
+
+
+function option(e) {
+return "<option value='"+e+"CE'>"+"<option value='"+e+"PE'>";
+}
+
+
   
