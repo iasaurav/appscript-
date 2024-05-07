@@ -108,7 +108,7 @@ return "<option value='"+e+"CE'>"+"<option value='"+e+"PE'>";
 function crude(i) {
   let fyers="https://trade.fyers.in/popout/index.html?symbol="; 
 let fyersend="&resolution=5&theme=light";
-let a="<td><a href='"+fyers+i+"CE"+fyersend+"'target='_blank'>"+result+"</a></td>"+"<td><a href='"+i+"PE"+fyersend+"'target='_blank'>"+result+"</a></td></tr>";
+let a="<tr><td><a href='"+fyers+i+"CE"+fyersend+"'target='_blank'>"+result+"</a></td>"+"<td><a href='"+i+"PE"+fyersend+"'target='_blank'>"+result+"</a></td></tr>";
   return a;
   }
 
