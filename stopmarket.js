@@ -92,3 +92,24 @@ let fyersend="&resolution=5&theme=light";
   return c;
   }
 
+
+
+
+function bse(n,b,f) {
+  let ni="https://groww.in/charts/options/nifty/";
+  let ba="https://groww.in/charts/options/banknifty/";
+  let fin="https://groww.in/charts/options/finnifty/";
+  let sen="https://groww.in/charts/options/sp-bse-sensex/";
+  let ban="https://groww.in/charts/options/sp-bse-bankex/";
+let a="<tr><td><a href='"+ni.slice(4,100)+"CE'target='_blank'>"+ni.slice(-5)+"</a></td>"+"<td><a href='"+ni.slice(4,100)+"PE'target='_blank'>"+ni.slice(-5)+"</a></td>";
+  
+  let b="<td><a href='"+ba.slice(4,100)+"CE'target='_blank'>"+ba.slice(-5)+"</a></td>"+"<td><a href='"+ba.slice(4,100)+"PE'target='_blank'>"+ba.slice(-5)+"</a></td></tr>";
+  
+  
+  let c="<td><a href='"+fin.slice(4,100)+"CE'target='_blank'>"+fin.slice(-5)+"</a></td>"+"<td><a href='"+fin.slice(4,100)+"PE'target='_blank'>"+fin.slice(-5)+"</a></td>";
+  
+  
+  
+  return a+c+b;
+  }
+
