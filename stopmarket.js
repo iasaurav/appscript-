@@ -113,3 +113,23 @@ let a="<tr><td><a href='"+ni.slice(4,100)+"CE'target='_blank'>"+ni.slice(-5)+"</
   return a+c+b;
   }
 
+
+
+
+function fnoe(i,j,k) {
+  let fyers="http://tinyurl.com/api-create.php?url=https://trade.fyers.in/popout/index.html?symbol=NSE:"+i+"-EQ&resolution=5&theme=light";
+  let sensibull="http://tinyurl.com/api-create.php?url=https://web.sensibull.com/chart?tradingSymbol="+i+j; 
+let option='http://tinyurl.com/api-create.php?url=https://instaoptions.fyers.in/instruments#instrument='+i+"&expiryDate="+k;
+let sensibulloption='http://tinyurl.com/api-create.php?url=https://web.sensibull.com/option-chain?tradingsymbol='+i+'&expiry='+k;
+  let a="<td><a href='"+importdata(fyers)+"'target='_blank'>"+i+"</a></td>";  
+  let b="<td><a href='"+importdata(option)+"'target='_blank'>"+i+"</a></td>";
+let c="<td><a href='"+import(sensibull)+"'target='_blank'>"+i+"</a></td>";
+  let d="<td><a href='"+import(sensibulloption)+"'target='_blank'>"+i+"</a></td></tr>";
+  return a+b+c+d;
+  }
+
+
+
+
+
+
