@@ -116,14 +116,14 @@ let a="<tr><td><a href='"+ni.slice(4,100)+"CE'target='_blank'>"+ni.slice(-5)+"</
 
 
 
-function fnoe(i,j,k) {
+function fnoe(i,l,j,k) {
   let fyers="https://trade.fyers.in/popout/index.html?symbol=NSE:"+i+"-EQ&resolution=5&theme=light";
   let sensibull="https://web.sensibull.com/chart?tradingSymbol="+i+j; 
 let option='https://instaoptions.fyers.in/instruments#instrument='+i+"&expiryDate="+k;
-let sensibulloption='http://tinyurl.com/api-create.php?url=https://web.sensibull.com/option-chain?tradingsymbol='+i+'&expiry='+k;
-  let a="<td><a href='"+fyers+"'target='_blank'>"+i+"</a></td>";  
+let sensibulloption='https://web.sensibull.com/option-chain?tradingsymbol='+i+'&expiry='+k;
+  let a="<td><a href='"+fyers+"'target='_blank'>"+l+"</a></td>";  
   let b="<td><a href='"+option+"'target='_blank'>"+i+"</a></td>";
-let c="<td><a href='"+sensibull+"'target='_blank'>"+i+"</a></td>";
+let c="<td><a href='"+sensibull+"'target='_blank'>"+i+j+"</a></td>";
   let d="<td><a href='"+sensibulloption+"'target='_blank'>"+i+"</a></td></tr>";
   return a+b+c+d;
   }
