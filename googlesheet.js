@@ -248,3 +248,20 @@ let a="https://docs.google.com/spreadsheets/d/";
 let b="/edit#gid="+c;
 return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
+
+
+
+
+function generateNumberList(a,b,c,p) {
+  var numbers = [];
+  for (var i = a; i <= b; i += c) {
+    numbers.push(p+i);
+  }
+  Logger.log(numbers); // Output the list to the Logger (View -> Logs)
+  // Alternatively, you can return the list as a string separated by commas
+  return numbers.join(', ');
+}
+
+
+    
+
