@@ -271,7 +271,7 @@ let fyers='https://trade.fyers.in/popout/index.html?symbol=';
 let a="<tr><td><a href='"+tradingview+h+"'>NIFTY "+h.slice(16)+"CE</a></td>"+"<td><a href='"+tradingview+i+"'>NIFTY "+i.slice(16)+"PE</a></td>";
 let b="<td><a href='"+tradingview+j+"'>BANKNIFTY "+j.slice(20)+"CE</a></td>"+"<td><a href='"+tradingview+k+"'>BANKNIFTY "+k.slice(20)+"PE</a></td>";
 let c="<td><a href='"+tradingview+l+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+"<td><a href='"+tradingview+m+"'>FINNIFTY "+m.slice(19)+"PE</a></td>";
-let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>"+n.slice(17)+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>"+o.slice(17)+"PE</a></td></tr>";
+let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>CRUDEOIL "+o.slice(17)+"</a></td></tr>";
   return a+b+c+d;
   }
 
