@@ -265,16 +265,18 @@ function generateNumberList(a,b,c,p) {
 
 
 
-function trade(h,i,j,k) {
+function trade(h,i,j,k,l,m,n,o) {
 let tradingview='https://in.tradingview.com/chart/?symbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
-  let a="<tr><td><a href='"+tradingview+h+"'>"+h+"</a></td>";
-  let b="<td><a href='"+tradingview+i+"'>"+i+"</a></td>";
-  let c="<td><a href='"+tradingview+j+"'>"+j+"</a></td>";
-  let d="<td><a href='"+fyers+k+"&resolution=5&theme=light'>"+k+"</a></td></tr>";
+  let a="<tr><td><a href='"+tradingview+h+"'>"+h+"</a></td>"+"<td><a href='"+tradingview+i+"'>"+i+"</a></td>";
+let b="<td><a href='"+tradingview+j+"'>"+j+"</a></td>"+"<td><a href='"+tradingview+k+"'>"+k+"</a></td>";
+let c="<td><a href='"+tradingview+l+"'>"+l+"</a></td>"+"<td><a href='"+tradingview+m+"'>"+m+"</a></td>";
+let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>"+n+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>"+o+"</a></td></tr>";
   return a+b+c+d;
   }
 
+
+  
 
 
 
