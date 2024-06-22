@@ -278,23 +278,24 @@ let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)
 function groww(h,i,j,k,l,m,n,o) {
 let tradingview='https://groww.in/charts/options/nifty/';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
-let a="<tr><td><a href='"+tradingview+h.slice(4,1000)+"'>"+h.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+i.slice(4,1000)+"'>"+i.slice(4,1000)+"</a></td>";
-let b="<td><a href='"+tradingview+j.slice(4,1000)+"'>"+j.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+k.slice(4,1000)+"'>"+k.slice(4,1000)+"</a></td>";
-let c="<td><a href='"+tradingview+l.slice(4,1000)+"'>"+l.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+m.slice(4,1000)+"'>"+m.slice(4,1000)+"</a></td>";
+let a="<tr><td><a href='"+tradingview+h.slice(4,1000)+"'>NIFTY "+h.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+i.slice(4,1000)+"'>NIFTY "+i.slice(-7)+"</a></td>";
+let b="<td><a href='"+tradingview+j.slice(4,1000)+"'>BANKNIFTY "+j.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+k.slice(4,1000)+"'>BANKNIFTY "+k.slice(-7)+"</a></td>";
+let c="<td><a href='"+tradingview+l.slice(4,1000)+"'>FINNIFTY "+l.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+m.slice(4,1000)+"'>FINNIFTY "+m.slice(-7)+"</a></td>";
 let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>CRUDEOIL "+o.slice(17)+"</a></td></tr>";
   return a+b+c+d;
   }
+
+
 
 function sensibull(h,i,j,k,l,m,n,o) {
 let tradingview='https://web.sensibull.com/chart?tradingSymbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
-let a="<tr><td><a href='"+tradingview+h.slice(4,1000)+"'>"+h.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+i.slice(4,1000)+"'>"+i.slice(4,1000)+"</a></td>";
-let b="<td><a href='"+tradingview+j.slice(4,1000)+"'>"+j.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+k.slice(4,1000)+"'>"+k.slice(4,1000)+"</a></td>";
-let c="<td><a href='"+tradingview+l.slice(4,1000)+"'>"+l.slice(4,1000)+"</a></td>"+"<td><a href='"+tradingview+m.slice(4,1000)+"'>"+m.slice(4,1000)+"</a></td>";
+let a="<tr><td><a href='"+tradingview+h.slice(4,1000)+"'>NIFTY "+h.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+i.slice(4,1000)+"'>NIFTY "+i.slice(-7)+"</a></td>";
+let b="<td><a href='"+tradingview+j.slice(4,1000)+"'>BANKNIFTY "+j.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+k.slice(4,1000)+"'>BANKNIFTY "+k.slice(-7)+"</a></td>";
+let c="<td><a href='"+tradingview+l.slice(4,1000)+"'>FINNIFTY "+l.slice(-7)+"</a></td>"+"<td><a href='"+tradingview+m.slice(4,1000)+"'>FINNIFTY "+m.slice(-7)+"</a></td>";
 let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>CRUDEOIL "+o.slice(17)+"</a></td></tr>";
   return a+b+c+d;
   }
-
 
 
 
