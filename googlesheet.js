@@ -263,5 +263,18 @@ function generateNumberList(a,b,c,p) {
 }
 
 
-    
+
+
+function trade(h,i,j,k) {
+let tradingview='https://in.tradingview.com/chart/?symbol=';
+let fyers='https://trade.fyers.in/popout/index.html?symbol=';
+  let a="<tr><td><a href='"+tradingview+h+"'>"+h+"</a></td>";
+  let b="<td><a href='"+tradingview+i+"'>"+i+"</a></td>";
+  let c="<td><a href='"+tradingview+j+"'>"+j+"</a></td>";
+  let d="<td><a href='"+fyers+k+"&resolution=5&theme=light'>"+k+"</a></td></tr>";
+  return a+b+c+d;
+  }
+
+
+
 
