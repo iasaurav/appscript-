@@ -300,9 +300,11 @@ let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)
 
 
 function upstox(h,i,j,k) {
+let tradingvie='https://tv.dhan.co/?symbol=MCXM';
 let tradingview='https://tv.upstox.com/charts/';
-let a="<tr><td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+k+"</a></td></tr>";
-return a;
+let a="<tr><td><a href='"+tradingvie+h.slice(7,1000)+":CRUDEOIL'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingvie+j.slice(7,1000)+":CRUDEOIL'target='_blank'>"+k+"</a></td>";
+  let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+k+"</a></td></tr>";
+return a+b;
   }
   
   
