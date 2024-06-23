@@ -299,6 +299,16 @@ let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)
 
 
 
+function upstox(h,i,j,k) {
+let tradingview='https://tv.upstox.com/charts/';
+let a="<tr><td><a href='"+tradingview+h+"'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"'>"+k+"</a></td></tr>";
+return a;
+  }
+  
+  
+  
+
+
   
 
 
