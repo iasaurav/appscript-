@@ -268,9 +268,10 @@ function generateNumberList(a,b,c,p) {
 function trade(h,i,j,k,l,m,n,o) {
 let tradingview='https://in.tradingview.com/chart/?symbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
-let a="<tr><td><a href='"+tradingview+h+"'>NIFTY "+h.slice(16)+"CE</a></td>"+"<td><a href='"+tradingview+i+"'>NIFTY "+i.slice(16)+"</a></td>";
-let b="<td><a href='"+tradingview+j+"'>BANKNIFTY "+j.slice(20)+"CE</a></td>"+"<td><a href='"+tradingview+k+"'>BANKNIFTY "+k.slice(20)+"PE</a></td>";
-let c="<td><a href='"+tradingview+l+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+"<td><a href='"+tradingview+m+"'>FINNIFTY "+m.slice(19)+"PE</a></td>";
+let ope = "'target='_blank";
+let a="<tr><td><a href='"+tradingview+h+ope+"'>NIFTY "+h.slice(16)+"CE</a></td>"+"<td><a href='"+tradingview+i+ope+"'>NIFTY "+i.slice(16)+"</a></td>";
+let b="<td><a href='"+tradingview+j+ope+"'>BANKNIFTY "+j.slice(20)+"CE</a></td>"+"<td><a href='"+tradingview+k+ope+"'>BANKNIFTY "+k.slice(20)+"PE</a></td>";
+let c="<td><a href='"+tradingview+l+ope+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+"<td><a href='"+tradingview+m+ope+"'>FINNIFTY "+m.slice(19)+"PE</a></td>";
 let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)+"</a></td>"+"<td><a href='"+fyers+o+"&resolution=5&theme=light'>CRUDEOIL "+o.slice(17)+"</a></td></tr>";
   return a+b+c+d;
   }
