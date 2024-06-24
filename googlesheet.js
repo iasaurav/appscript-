@@ -273,6 +273,14 @@ let c="<td><a href='"+tradingview+l+ope+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+
   return a+b+c;
   }
 
+function dhanupstox(h,i,j,k) {
+let tradingvie='https://tv.dhan.co/?symbol=MCXM';
+let tradingview='https://tv.upstox.com/charts/MCX_FO|';
+let a="<tr><td><a href='"+tradingvie+h+i+"'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingvie+j+k"'target='_blank'>"+k+"</a></td>";
+  let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+k+"</a></td></tr>";
+return a+b;
+  }
+
 
 
 
@@ -315,20 +323,17 @@ let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)
 
 function upstox(h,i,j,k) {
 let tradingvie='https://tv.dhan.co/?symbol=MCXM';
-let tradingview='https://tv.upstox.com/charts/';
+let tradingview='https://tv.upstox.com/charts/MCX_FO|';
 let a="<tr><td><a href='"+tradingvie+h.slice(7,1000)+":CRUDEOIL'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingvie+j.slice(7,1000)+":CRUDEOIL'target='_blank'>"+k+"</a></td>";
   let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+k+"</a></td></tr>";
 return a+b;
   }
 
+
+
+
   
-  function dhan(h,i) {
-let tradingvie='https://tv.dhan.co/?symbol=MCXM';
-let tradingview='https://tv.upstox.com/charts/';
-let a="<tr><td><a href='"+tradingvie+h+"'target='_blank'>"+h+"</a></td>"+"<td><a href='"+tradingvie+i+"'target='_blank'>"+i+"</a></td>";
-  let b="<td><a href='"+tradingview+h.slice(str.indexOf(":") + 1).trim()+"?isPopup=true'target='_blank'>"+h.slice(str.indexOf(":") + 1).trim()+"</a></td>"+"<td><a href='"+tradingview+i.slice(str.indexOf(":") + 1).trim()+"?isPopup=true'target='_blank'>"+i.slice(str.indexOf(":") + 1).trim()+"</a></td></tr>";
-return a+b;
-  }
+  
   
   
 
