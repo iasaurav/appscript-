@@ -276,7 +276,7 @@ let c="<td><a href='"+tradingview+l+ope+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+
 function dhanupstox(h,i,j,k,l,m) {
   let tradingview='https://tv.upstox.com/charts/MCX_FO|';
 let tradingvie='https://tv.dhan.co/?symbol=MCXM';
-let a="<tr><td><a href='"+tradingvie+h+i+"'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingvie+j+k+"'target='_blank'>"+k+"</a></td>";
+let a="<tr><td><a href='"+tradingvie+h+":"+i+"'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingvie+j+":"+k+"'target='_blank'>"+k+"</a></td>";
 let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+l+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+m+"</a></td></tr>";
   return a+b;
   }
