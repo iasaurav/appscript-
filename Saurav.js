@@ -1,4 +1,4 @@
-function trade(h,i,j,k,l,m,n,o,p,q,r,s) {
+function trade(h,i,j,k,l,m,p,q,r,s) {
 let tradingview='https://in.tradingview.com/chart/?symbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
 let upstox='https://tv.upstox.com/charts/MCX_FO|';
