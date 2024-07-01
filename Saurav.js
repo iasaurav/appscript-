@@ -1,5 +1,5 @@
 function trade(h,i,j,k,l,m,p,q,r,s) {
-let tradingview='https://in.tradingview.com/chart/?symbol=';
+let tradingview='https://in.tradingview.com/symbols/NSE-';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
 let upstox='https://tv.upstox.com/charts/MCX_FO|';
 let ope = "'target='_blank";
