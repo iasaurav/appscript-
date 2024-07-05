@@ -250,12 +250,14 @@ return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
 
 
-function table(h,i,j,k,l,m,n,o) {
+function table(h,i,j,k,l,m,n,o,p,q,r,s) {
   let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
 let b="<td>"+j+"</td>"+"<td>"+k+"</td>";
 let c="<td>"+l+"</td>"+"<td>"+m+"</td>";
-let d="<td>"+n+"</td>"+"<td>"+o+"</td></tr>";
-  return a+b+c+d;
+let d="<td>"+n+"</td>"+"<td>"+o+"</td>";
+let e="<td>"+p+"</td>"+"<td>"+q+"</td>";
+let f="<td>"+r+"</td>"+"<td>"+s+"</td></tr>";
+  return a+b+c+d+e+f;
   }
 
 
