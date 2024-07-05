@@ -260,6 +260,15 @@ let f="<td>"+r+"</td>"+"<td>"+s+"</td></tr>";
   return a+b+c+d+e+f;
   }
 
+function crudetable(h,i,j,k) {
+  let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
+let b="<td>"+j+"</td>"+"<td>"+k+"</td></tr>";
+  return a+b;
+  }
+
+
+
+
 
 
 
