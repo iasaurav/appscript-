@@ -254,7 +254,7 @@ function table(h,i,j,k,l,m,n,o) {
   let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
 let b="<td>"+j+"</td>"+"<td>"+k+"</td>";
 let c="<td>"+l+"</td>"+"<td>"+m+"</td>";
-let a="<td>"+n+"</td>"+"<td>"+o+"</td></tr>";
+let d="<td>"+n+"</td>"+"<td>"+o+"</td></tr>";
   return a+b+c+d;
   }
 
