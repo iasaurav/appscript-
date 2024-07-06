@@ -1,0 +1,31 @@
+function doGet() {
+  // The ID of the Google Sheet
+  var sheetId = 'YOUR_SHEET_ID_HERE';
+
+  // Open the sheet by ID
+  var sheet = SpreadsheetApp.openById(sheetId).getSheetByName('Sheet1');
+  
+  // Get the range of data you want to convert to HTML
+  var range = sheet.getRange('A1:D10'); // Change this range as needed
+  var values = range.getValues();
+  
+  // Convert the range data to an HTML table
+  var html = '<html><body><table border="1">';
+  
+  for (var i = 0; i < values.length; i++) {
+    html += '<tr>';
+    for (var j = 0; j < values[i].length; j++) {
+      html += '<td>' + values[i][j] + '</td>';
+    }
+    html += '</tr>';
+  }
+  
+  html += '</table></body></html>';
+  
+  // Return the HTML content
+  return HtmlService.createHtmlOutput(html);
+}
+
+
+
+
