@@ -1,0 +1,41 @@
+function doGet() {
+  return HtmlService.createHtmlOutput(createHtmlTable());
+}
+
+function createHtmlTable() {
+  // Replace 'Sheet1' and 'A1:C10' with your sheet name and range
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('UPSTOX');
+  var range = sheet.getRange('A1:J20');
+  var values = range.getValues();
+  
+  var html = '<html><head><style>' + getCss() + '</style></head><body>';
+  html += "</br>TRADE NOW FROM BROKER(UPSTOX-DHAN)<table id='upstoxdhan'><thead><tr><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th></tr></thead>";
+  
+  for (var i = 0; i < values.length; i++) {
+    html += '<tr>';
+    for (var j = 0; j < values[i].length; j++) {
+      html += '<td>' + values[i][j] + '</td>';
+    }
+    html += '</tr>';
+  }
+  
+  html += '</table></body></html>';
+  return html;
+}
+
+function getCss() {
+  return `
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  `;
+}
