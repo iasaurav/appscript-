@@ -1,9 +1,5 @@
 function doGet() {
-  // The ID of the Google Sheet
-  var sheetId = '';
-
-  // Open the sheet by ID
-  var sheet = SpreadsheetApp.openById(sheetId).getSheetByName('UPSTOX');
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('UPSTOX');
   
   // Get the range of data you want to convert to HTML
   var range = sheet.getRange('A1:D20'); // Change this range as needed
@@ -11,7 +7,6 @@ function doGet() {
   
   // Convert the range data to an HTML table
   var html = '<html><body></br>TRADE NOW FROM BROKER(UPSTOX-DHAN)<table id='optionb'><thead><tr><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th></tr></thead>';
-  
   for (var i = 0; i < values.length; i++) {
     html += '<tr>';
     for (var j = 0; j < values[i].length; j++) {
