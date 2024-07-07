@@ -1,7 +1,4 @@
-1i9lDCP5XZ7eowbT9WOAR3LBXUcfMH-ChEWjDe7y7B_rsWvg0bfqNoO9E
 
-
-//stockmarket//
 
 function table(h,i,j,k,l,m,n,o,p,q) {
   let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
