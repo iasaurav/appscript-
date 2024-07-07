@@ -145,9 +145,6 @@ function TRANSLATE(input)
 }
 
 
-
-
-
 //important//
 function Id () {
   return SpreadsheetApp.getActiveSpreadsheet().getId()
@@ -170,9 +167,6 @@ let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
   return a+b+c+d;
   }
 
-
-
-
 function contact(h,message,i,j,k,l) {
   let whatsapp="https://api.whatsapp.com/send?phone=91"+h+"&text="+message; 
   let a="<tr><td><a href='"+whatsapp+"'>"+i+"</a></td>";
@@ -182,41 +176,12 @@ function contact(h,message,i,j,k,l) {
   return a+b+c+d;
   }
 
-
-
-
-
-
 function dues(p,i,n) {
   let upi='0302jan@paytm';
 let link='https://gpay.app.goo.gl/pay-T8wH7S8sEGh';
   return "<div class='gallery'><a href='paytmmp://pay?pa="+upi+"&pn=saurav&am="
 +p+"'><img src='"+i+"'></a><div class='desc'><a href='"+link+"'>"+n+"</div></div>";
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function specialconcat(input, delimiter) {
    if (Array.isArray(input)) {
@@ -294,16 +259,6 @@ let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+l+"</a></td
   return a+b;
   }
 
-
-  
-  
-
-
-
-
-
-
-
 function trader(h,i,j,k,l,m,n,o) {
 let tradingview='https://in.tradingview.com/chart/?symbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
@@ -337,8 +292,6 @@ let d="<td><a href='"+fyers+n+"&resolution=5&theme=light'>CRUDEOIL "+n.slice(17)
   return a+b+c+d;
   }
 
-
-
 function upstox(h,i,j,k) {
 let tradingvie='https://tv.dhan.co/?symbol=MCXM';
 let tradingview='https://tv.upstox.com/charts/MCX_FO|';
@@ -346,17 +299,3 @@ let a="<tr><td><a href='"+tradingvie+h.slice(7,1000)+":CRUDEOIL'target='_blank'>
   let b="<td><a href='"+tradingview+h+"?isPopup=true'target='_blank'>"+i+"</a></td>"+"<td><a href='"+tradingview+j+"?isPopup=true'target='_blank'>"+k+"</a></td></tr>";
 return a+b;
   }
-
-
-
-
-  
-  
-  
-  
-
-
-  
-
-
-
