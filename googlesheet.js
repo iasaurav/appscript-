@@ -367,5 +367,8 @@ return a+b;
 
   
 
-
+function json(a,b,c,d) {
+let jsonapp="{name:'"+a+"',mob1:'"+b+"',mob2:'"+c+"',mob3:'"+d+"'},";
+return jsonapp;
+}
 
