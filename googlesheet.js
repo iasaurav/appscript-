@@ -1,125 +1,8 @@
-function youtuber(p,i, n) {
-  let audio = 'https://ytaud.io/play/';
-  let video = 'https://www.genfrom.com/process.php?u=';
-  let ope = "'target='_blank";
-let c="<tr><td><a href='#'id='b"+p+"'data-video ='"+i+"'class='light'>"+n.slice(0,35)+"</a></td>";
- let a = "<td><a href='" + audio + i + ope + "'>Audio-Player</a></td>";
-  let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
-  return c+a + b;
-}
-
-
-
-function pay(o,p,n) {
-let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=";
-let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
-let encoded = qr + encodeURIComponent(a);
- return "<div class='gallery'><a href='"+a+"'><img src='"+n+"'></a><div class='desc'><a href='"+encoded+"'>"+p+"</div></div>";
-  }
-
-
-
-
-
-function array(a) {
-return "'"+a+"',";
-}
-
-
-
-
-function Id () {
-  return SpreadsheetApp.getActiveSpreadsheet().getId()
-}
-
-
-
-
-
-
-
-function blog(a) {
-let u=a.replace(/^.*\//, '');
-     let newStr = u.replace(/.html/g,'');
-return newStr;
-}
-
-
-
-
-function shop(h) {
-let amazon='https://www.amazon.in/s?k=';
-let bigbasket='https://www.bigbasket.com/ps/?q=';
-let flipkart='https://www.flipkart.com/search?q=';
-let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
-  let a="<tr><td><a href='"+amazon+h+"'>"+h+"</a></td>";
-  let b="<td><a href='"+bigbasket+h+"'>"+h+"</a></td>";
-  let c="<td><a href='"+flipkart+h+"'>"+h+"</a></td>";
-  let d="<td><a href='"+flipkartg+h+"&sid=eat%2Fnvt&marketplace=GROCERY&sourceFeatureType=mmpSplit&pageUID=1680176472603'>"+h+"</a></td><tr>";
-  return a+b+c+d;
-  }
-
-
-function youtube(i, n) {
-  let audio = 'https://ytaud.io/play/';
-  let video = 'https://www.genfrom.com/process.php?u=';
-  let ope = "'target='_blank";
-  let a = "<tr><td><a href='" + audio + i + ope + "'>" + n.slice(0, 35) + "</a></td>";
-  let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
-  return a + b;
-}
-
-
-function contact(h,message,i,j,k,l) {
-  let whatsapp="https://api.whatsapp.com/send?phone=91"+h+"&text="+message; 
-  let a="<tr><td><a href='"+whatsapp+"'>"+i+"</a></td>";
-  let b="<td><a href='tel:"+j+"'>"+j+"</a></td>";
-  let c="<td><a href='tel:"+k+"'>"+k+"</a></td>";
-  let d="<td><a href=='tel:"+l+"'>"+l+"</a></td></tr>";
-  return a+b+c+d;
-  }
-
-
-
-function book(a,b,c,a) {
-  return "<tr><td><a href='https://ncert.nic.in/textbook/pdf/"+a+"dd.zip'>"+b
-+"</a></td><td><a href='https://ncert.nic.in/textbook/pdf/"+c+"dd.zip'>"+a+"</a></td></tr>";
-  }
-
-
-function dues(p,i,n) {
-  let upi='0302jan@paytm';
-let link='https://gpay.app.goo.gl/pay-T8wH7S8sEGh';
-  return "<div class='gallery'><a href='paytmmp://pay?pa="+upi+"&pn=saurav&am="
-+p+"'><img src='"+i+"'></a><div class='desc'><a href='"+link+"'>"+n+"</div></div>";
-  }
-
-
-
-
-
-
-
-function ytplaylist (b) {
-    let yt="https://syncwith.com/youtube/playlist/"+b.slice(-34)+".csv"
-  +"";
-    return yt;
-    }
-
-
-
-
-
-
-
 function artist(b,c) {
   let a="https://www.google.com/search?q=wynk: ";
   return "<tr><td><a href='"+a+b+"'>"+b+"</a></td>"+"<td><a href='"+a+c+"'>"+c
 +"</a></td></tr>";
   }
-
-
-
 
 function youtubeid(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
@@ -132,6 +15,61 @@ function youtubeid(url) {
     }
 }
 
+
+
+function ytplaylist (b) {
+    let yt="https://syncwith.com/youtube/playlist/"+b.slice(-34)+".csv"
+  +"";
+    return yt;
+    }
+
+
+
+function youtuber(p,i, n) {
+  let audio = 'https://ytaud.io/play/';
+  let video = 'https://www.genfrom.com/process.php?u=';
+  let ope = "'target='_blank";
+let c="<tr><td><a href='#'id='b"+p+"'data-video ='"+i+"'class='light'>"+n.slice(0,35)+"</a></td>";
+ let a = "<td><a href='" + audio + i + ope + "'>Audio-Player</a></td>";
+  let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
+  return c+a + b;
+}
+
+
+function youtube(i, n) {
+  let audio = 'https://ytaud.io/play/';
+  let video = 'https://www.genfrom.com/process.php?u=';
+  let ope = "'target='_blank";
+  let a = "<tr><td><a href='" + audio + i + ope + "'>" + n.slice(0, 35) + "</a></td>";
+  let b = "<td><a href='" + video + encodeURIComponent('https://m.youtube.com/watch?v=' + i) + ope + "'>Download-Now</a></td></tr>";
+  return a + b;
+}
+
+function book(a,b,c,a) {
+  return "<tr><td><a href='https://ncert.nic.in/textbook/pdf/"+a+"dd.zip'>"+b
++"</a></td><td><a href='https://ncert.nic.in/textbook/pdf/"+c+"dd.zip'>"+a+"</a></td></tr>";
+  }
+
+
+function pay(o,p,n) {
+let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=";
+let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
+let encoded = qr + encodeURIComponent(a);
+ return "<div class='gallery'><a href='"+a+"'><img src='"+n+"'></a><div class='desc'><a href='"+encoded+"'>"+p+"</div></div>";
+  }
+
+
+
+function blog(a) {
+let u=a.replace(/^.*\//, '');
+     let newStr = u.replace(/.html/g,'');
+return newStr;
+}
+
+
+function array(a) {
+return "'"+a+"',";
+}
 
 function HYPERLINK (a, b) { 
 return "("+a+"', '"+b+"')";
@@ -158,6 +96,7 @@ function bankq(o, p, q, r) {
 let b = "paytmmp://pay?pa="+o+ "@" + p + "&pn=" + q + "&am=" + r;
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht=qr&chl="; let encode = qr + encodeURIComponent(b);
 return "<a href='" + encode + "'>Bank-Qr</a>";}
+
 
 
 function anchor(a,b) {
@@ -205,6 +144,80 @@ function TRANSLATE(input)
 
 }
 
+
+
+
+
+//important//
+function Id () {
+  return SpreadsheetApp.getActiveSpreadsheet().getId()
+}
+
+function json(a,b,c,d) {
+let jsonapp="{name:'"+a+"',mob1:'"+b+"',mob2:'"+c+"',mob3:'"+d+"'},";
+return jsonapp;
+}
+
+function shop(h) {
+let amazon='https://www.amazon.in/s?k=';
+let bigbasket='https://www.bigbasket.com/ps/?q=';
+let flipkart='https://www.flipkart.com/search?q=';
+let flipkartg='https://www.flipkart.com/grocery/pr/search?q=';
+  let a="<tr><td><a href='"+amazon+h+"'>"+h+"</a></td>";
+  let b="<td><a href='"+bigbasket+h+"'>"+h+"</a></td>";
+  let c="<td><a href='"+flipkart+h+"'>"+h+"</a></td>";
+  let d="<td><a href='"+flipkartg+h+"&sid=eat%2Fnvt&marketplace=GROCERY&sourceFeatureType=mmpSplit&pageUID=1680176472603'>"+h+"</a></td><tr>";
+  return a+b+c+d;
+  }
+
+
+
+
+function contact(h,message,i,j,k,l) {
+  let whatsapp="https://api.whatsapp.com/send?phone=91"+h+"&text="+message; 
+  let a="<tr><td><a href='"+whatsapp+"'>"+i+"</a></td>";
+  let b="<td><a href='tel:"+j+"'>"+j+"</a></td>";
+  let c="<td><a href='tel:"+k+"'>"+k+"</a></td>";
+  let d="<td><a href=='tel:"+l+"'>"+l+"</a></td></tr>";
+  return a+b+c+d;
+  }
+
+
+
+
+
+
+function dues(p,i,n) {
+  let upi='0302jan@paytm';
+let link='https://gpay.app.goo.gl/pay-T8wH7S8sEGh';
+  return "<div class='gallery'><a href='paytmmp://pay?pa="+upi+"&pn=saurav&am="
++p+"'><img src='"+i+"'></a><div class='desc'><a href='"+link+"'>"+n+"</div></div>";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function specialconcat(input, delimiter) {
    if (Array.isArray(input)) {
       var data = '';
@@ -244,7 +257,7 @@ let a="https://docs.google.com/spreadsheets/d/";
 let b="/edit#gid="+c;
 return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
-
+//stockmarket//
 
 function table(h,i,j,k,l,m,n,o,p,q) {
   let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
@@ -261,28 +274,6 @@ let b="<td>"+j+"</td>"+"<td>"+k+"</td></tr>";
   return a+b;
   }
 
-function json(a,b,c,d) {
-let jsonapp="{name:'"+a+"',mob1:'"+b+"',mob2:'"+c+"',mob3:'"+d+"'},";
-return jsonapp;
-}
-
-
-
-
-
-
-
-function generateNumberList(a,b,c,p) {
-  var numbers = [];
-  for (var i = a; i <= b; i += c) {
-    numbers.push(p+i);
-  }
-  Logger.log(numbers); // Output the list to the Logger (View -> Logs)
-  // Alternatively, you can return the list as a string separated by commas
-  return numbers.join(', ');
-}
-
-
 function trade(h,i,j,k,l,m,n,o) {
 let tradingview='https://in.tradingview.com/chart/?symbol=';
 let fyers='https://trade.fyers.in/popout/index.html?symbol=';
@@ -293,6 +284,8 @@ let c="<td><a href='"+tradingview+l+ope+"'>FINNIFTY "+l.slice(19)+"CE</a></td>"+
   return a+b+c;
   }
 
+
+// check if use//
 function dhanupstox(h,i,j,k,l,m) {
   let tradingview='https://tv.upstox.com/charts/MCX_FO|';
 let tradingvie='https://tv.dhan.co/?symbol=MCXM';
