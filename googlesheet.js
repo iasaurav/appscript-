@@ -10,10 +10,6 @@ let c="<tr><td><a href='#'id='b"+p+"'data-video ='"+i+"'class='light'>"+n.slice(
 
 
 
-
-
-
-
 function pay(o,p,n) {
 let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=";
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
@@ -250,14 +246,13 @@ return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
 
 
-function table(h,i,j,k,l,m,n,o,p,q,r,s) {
+function table(h,i,j,k,l,m,n,o,p,q) {
   let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
 let b="<td>"+j+"</td>"+"<td>"+k+"</td>";
 let c="<td>"+l+"</td>"+"<td>"+m+"</td>";
 let d="<td>"+n+"</td>"+"<td>"+o+"</td>";
-let e="<td>"+p+"</td>"+"<td>"+q+"</td>";
-let f="<td>"+r+"</td>"+"<td>"+s+"</td></tr>";
-  return a+b+c+d+e+f;
+let e="<td>"+p+"</td>"+"<td>"+q+"</td></tr>";
+  return a+b+c+d+e;
   }
 
 function crudetable(h,i,j,k) {
@@ -266,7 +261,10 @@ let b="<td>"+j+"</td>"+"<td>"+k+"</td></tr>";
   return a+b;
   }
 
-
+function json(a,b,c,d) {
+let jsonapp="{name:'"+a+"',mob1:'"+b+"',mob2:'"+c+"',mob3:'"+d+"'},";
+return jsonapp;
+}
 
 
 
@@ -367,8 +365,5 @@ return a+b;
 
   
 
-function json(a,b,c,d) {
-let jsonapp="{name:'"+a+"',mob1:'"+b+"',mob2:'"+c+"',mob3:'"+d+"'},";
-return jsonapp;
-}
+
 
