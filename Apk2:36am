@@ -1,3 +1,4 @@
+
 function doGet() {
   return HtmlService.createHtmlOutput(createHtmlTable());
 }
@@ -9,7 +10,7 @@ function createHtmlTable() {
   var values = range.getValues();
   
   var html = '<html><head><style>' + getCss() + '</style></head><body>';
-  html += "</br>TRADE NOW FROM BROKER(UPSTOX-DHAN)<table id='upstoxdhan'><thead><tr><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th></tr></thead>";
+  html += "</br>TRADE NOW FROM BROKER(UPSTOX-DHAN)<table id='upstoxdhan'><thead><tr><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th><th>CALL</th><th>PUT</th></tr></thead>";
   
   for (var i = 0; i < values.length; i++) {
     html += '<tr>';
@@ -25,17 +26,29 @@ function createHtmlTable() {
 
 function getCss() {
   return `
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
+    #upstoxdhan {
+    border-collapse: collapse;
+    width: 3000px;
+  }
+      #upstoxdhan td,
+  #upstoxdhan th {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+    #upstoxdhan th {
+    background-color: #2E86C1;
+    border: 1px solid black;
+    color: white;
+    text-align: left;
+  }
   `;
 }
+
+
+
+
+
+  
+  
+
