@@ -1,0 +1,26 @@
+function Index() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheets = ss.getSheets();
+  var targetSheetName = 'INDEX';
+  
+  // Check if the target sheet exists, otherwise create it
+  var targetSheet = ss.getSheetByName(targetSheetName);
+  if (!targetSheet) {
+    targetSheet = ss.insertSheet(targetSheetName);
+  } else {
+    targetSheet.clear(); // Clear the existing content
+  }
+  
+  // Prepare headers
+  targetSheet.getRange('A1').setValue('Sheet Name');
+  targetSheet.getRange('B1').setValue('Sheet ID');
+  
+  // Fill data
+  for (var i = 0; i < sheets.length; i++) {
+    var sheet = sheets[i];
+    var sheetId = sheet.getSheetId();
+    var sheetName = sheet.getName();
+    targetSheet.getRange(i + 2, 1).setValue(sheetName);
+    targetSheet.getRange(i + 2, 2).setValue(sheetId);
+  }
+}
