@@ -292,3 +292,10 @@ let b="<td>"+j+"</td>"+"<td>"+k+"</td></tr>";
   }
 
 
+
+
+function Id () {
+let link="https://docs.google.com/spreadsheets/d/"+SpreadsheetApp.getActiveSpreadsheet().getId()+"/edit?gid="+a
+  return link
+}
+
