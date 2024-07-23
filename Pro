@@ -276,3 +276,19 @@ let isc="<td>"+q+"</td>"+"<td>"+r+"</td></tr>";
   return asc+bsc+csc+dsc+esc+fsc+gsc+hsc+isc;
   }
 
+function table(h,i,j,k,l,m,n,o,p,q) {
+  let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
+let b="<td>"+j+"</td>"+"<td>"+k+"</td>";
+let c="<td>"+l+"</td>"+"<td>"+m+"</td>";
+let d="<td>"+n+"</td>"+"<td>"+o+"</td>";
+let e="<td>"+p+"</td>"+"<td>"+q+"</td></tr>";
+  return a+b+c+d+e;
+  }
+
+function crudetable(h,i,j,k) {
+  let a="<tr><td>"+h+"</td>"+"<td>"+i+"</td>";
+let b="<td>"+j+"</td>"+"<td>"+k+"</td></tr>";
+  return a+b;
+  }
+
+
