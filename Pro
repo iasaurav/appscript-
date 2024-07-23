@@ -225,7 +225,7 @@ return "<a href='"+a+id()+b+"'>"+d+"</a>";
 
 
 
-function anchor(a, b, c, d, e) {
+function contact(a, b, c, d, e) {
 
     let html = '<tr>';
     
