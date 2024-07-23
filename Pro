@@ -222,3 +222,42 @@ let a="https://docs.google.com/spreadsheets/d/";
 let b="/edit#gid="+c;
 return "<a href='"+a+id()+b+"'>"+d+"</a>";
 }
+
+
+
+function anchor(a, b, c, d, e) {
+
+    let html = '<tr>';
+    
+    // Check if 'a' is blank
+    if (a === '') {
+        html += '<td></td>';
+    } else {
+        html += `<td><a href='https://api.whatsapp.com/send?phone=91${a}'>${b}</a></td>`;
+    }
+    
+    // Check if 'c' is blank
+    if (c === '') {
+        html += '<td></td>';
+    } else {
+        html += `<td><a href='tel:${c}'>${c}</a></td>`;
+    }
+    
+    // Check if 'd' is blank
+    if (d === '') {
+        html += '<td></td>';
+    } else {
+        html += `<td><a href='tel:${d}'>${d}</a></td>`;
+    }
+    
+    // Check if 'e' is blank
+    if (e === '') {
+        html += '<td></td>';
+    } else {
+        html += `<td><a href='tel:${e}'>${e}</a></td>`;
+    }
+    
+    html += '</tr>';
+    return html;
+}
+
