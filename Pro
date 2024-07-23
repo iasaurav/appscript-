@@ -261,3 +261,18 @@ function contact(a, b, c, d, e) {
     return html;
 }
 
+
+
+function bookmarktable(h,i,j,k,l,m,n,o,p,q) {
+  let asc="<tr><td>"+a+"</td>"+"<td>"+b+"</td>";
+let bsc="<td>"+c+"</td>"+"<td>"+d+"</td>";
+let csc="<td>"+e+"</td>"+"<td>"+f+"</td>";
+let dsc="<td>"+g+"</td>"+"<td>"+h+"</td>";
+let esc="<td>"+i+"</td>"+"<td>"+j+"</td>";
+let fsc="<td>"+k+"</td>"+"<td>"+l+"</td>";
+let gsc="<td>"+m+"</td>"+"<td>"+n+"</td>";
+let hsc="<td>"+o+"</td>"+"<td>"+p+"</td>";
+let isc="<td>"+q+"</td>"+"<td>"+r+"</td></tr>";
+  return asc+bsc+csc+dsc+esc+fsc+gsc+hsc+isc;
+  }
+
