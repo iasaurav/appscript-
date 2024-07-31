@@ -295,3 +295,14 @@ let link="https://docs.google.com/spreadsheets/d/"+SpreadsheetApp.getActiveSprea
   return link
 }
 
+
+
+function bookmarktable2(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s) {
+  let asc="<tr><td>"+a+"</td>"+"<td>"+b+"</td>";
+let bsc="<td>"+c+"</td>"+"<td>"+d+"</td>";
+let csc="<td>"+e+"</td>"+"<td>"+f+"</td>";
+let dsc="<td>"+g+"</td>"+"<td>"+h+"</td>"+"<td>"+i+"</td><td>"+j+"</td><td>"+k+"</td>"+"<td>"+l+"</td>"+"<td>"+m+"</td>"+"<td>"+n+"</td>"+"<td>"+o+"</td>"+"<td>"+p+"</td>"+p+"<td>"+q+"</td>";
+let esc="<td>"+r+"</td>"+"<td>"+s+"</td></tr>";
+  return asc+bsc+csc+dsc+esc;
+  }
+
